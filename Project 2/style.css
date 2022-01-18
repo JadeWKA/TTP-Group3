@@ -140,7 +140,6 @@ p.text span {
 
 /* VINCE PAMOLARCO - Page Properties */
 .page {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -166,12 +165,12 @@ p.text span {
 /* Aung Tun- the lines below postion the images in the carousel*/
 
 .carousel-wrapper{
-    display: none;
     height:400px;
     position:relative;
     width:800px;
     margin:0 auto;
-  }
+}
+
   .carousel-item{
     position:absolute;
     top:0;

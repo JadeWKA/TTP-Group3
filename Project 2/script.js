@@ -8,15 +8,18 @@ const movieSelect = document.getElementById('movie');
 // VINCE PAMOLARCO - close
 
 
-function close () {
-  var page = document.getElementsByClassName(".page");
-  var carousel = document.getElementsByClassName(".carousel-wrapper")
-
-  page.style.display = "none"
-  carousel.style.display = "flex"
+function closeThis () {
+  document.getElementById("page").style.display = "none";
+  document.getElementById("carousel-wrapper").style.display = "flex";
   
 }
 
+
+function openThis () {
+  document.getElementById("page").style.display = "flex";
+  document.getElementById("carousel-wrapper").style.display = "none";
+  
+}
 
 populateUI();
 

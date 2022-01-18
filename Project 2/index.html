@@ -16,7 +16,7 @@
 
              
 
-  <div class="carousel-wrapper" id="carousel-wrapper">
+  <div class="carousel-wrapper" id="carousel-wrapper" style="display: flex;">
     <span id="item-1"></span>
     <span id="item-2"></span>
     <span id="item-3"></span>
@@ -38,8 +38,9 @@
       <!-- AUNG TUN - this is the button that leads the user to a page to buy tickets  -->
 
       <div class="container1">
-        <button class="btn-1">BUY TICKETS!</button>
-        </div>
+        <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+      </div>
+
     </div>
     
     <!-- AUNG TUN - the lines above are then repeated all the way up to item 8-->
@@ -51,8 +52,8 @@
       <a class="arrow arrow-next" href="#item-3"></a>
 
       <div class="container1">
-        <button class="btn-1">BUY TICKETS!</button>
-        </div>
+        <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+      </div>
 
     </div>
     
@@ -63,8 +64,8 @@
       <a class="arrow arrow-next" href="#item-4"></a>
 
       <div class="container1">
-        <button class="btn-1">BUY TICKETS!</button>
-        </div>
+        <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+      </div>
 
     </div>
 
@@ -75,8 +76,8 @@
         <a class="arrow arrow-next" href="#item-5"></a>
 
         <div class="container1">
-          <button class="btn-1">BUY TICKETS!</button>
-          </div>
+          <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+        </div>
       </div>
 
       <div class="carousel-item item-5">
@@ -86,8 +87,8 @@
         <a class="arrow arrow-next" href="#item-6"></a>
 
         <div class="container1">
-          <button class="btn-1">BUY TICKETS!</button>
-          </div>
+          <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+        </div>
       </div>
 
       <div class="carousel-item item-6">
@@ -97,8 +98,8 @@
         <a class="arrow arrow-next" href="#item-7"></a>
 
         <div class="container1">
-          <button class="btn-1">BUY TICKETS!</button>
-          </div>
+          <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+        </div>
       </div>
 
       <div class="carousel-item item-7">
@@ -108,8 +109,8 @@
         <a class="arrow arrow-next" href="#item-8"></a>
 
         <div class="container1">
-          <button class="btn-1">BUY TICKETS!</button>
-          </div>
+          <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+        </div>
       </div>
 
       <div class="carousel-item item-8">
@@ -119,18 +120,18 @@
         <a class="arrow arrow-next" href="#item-1"></a>
 
         <div class="container1">
-          <button class="btn-1">BUY TICKETS!</button>
-          </div>
+          <button class="btn-1" onclick="openThis()">BUY TICKETS!</button>
+        </div>
       </div>
 </div>
 
 
   <!-- VINCE PAMOLARCO - START of Section of whole page -->
-  <div class="page" id="page">
+  <div class="page" id="page" style="display: none;">
 
     <!-- VINCE PAMOLARCO - Hidden Section for Pricing -->
     <div class="movie-container" style="display: none;">
-      <label>Pick a movie:</label>
+      <label>Pick a seat:</label>
 
       <select id="movie">
         <option value="600">Regular ($600)</option>
@@ -358,9 +359,10 @@
         Get your tickets now
       </button>
 
-      <button id="close" class='close' onclick="close()"> 
-        close
+      <button class='close' onclick=" closeThis()"> 
+        Close
       </button>
+
 
     </div>
     <!-- VINCE PAMOLARCO - END of Section for summary -->
