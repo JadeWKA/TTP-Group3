@@ -9,6 +9,10 @@
 /* VINCE PAMOLARCO - Body Properties */
 body {
     background-color: #242333;
+    background-image: url(./img/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -140,6 +144,7 @@ p.text span {
 
 /* VINCE PAMOLARCO - Page Properties */
 .page {
+    background-color: #242333;
     align-items: center;
     justify-content: center;
     flex-direction: column;
