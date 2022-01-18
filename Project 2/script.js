@@ -41,6 +41,7 @@ function populateUI() {
     });
   }
 
+// VINCE PAMOLARCO - getSelected Pricing
 const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
 
   if (selectedMovieIndex !== null) {
