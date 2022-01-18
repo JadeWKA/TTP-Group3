@@ -163,6 +163,8 @@ p.text span {
 
 }
   
+/* Aung Tun- the lines below postion the images in the carousel*/
+
 .carousel-wrapper{
     display: none;
     height:400px;
@@ -180,6 +182,7 @@ p.text span {
     opacity:0;
     transition: all 0.5s ease-in-out;
   }
+  /* Aung Tun- arrow properties */
   .arrow{
     border: solid black;
       border-width: 0 3px 3px 0;
@@ -218,6 +221,7 @@ p.text span {
       display: none;
     }
 
+    /* Aung Tun - The lines below contain the image files of in the carousel */
     .item-1 {
         z-index: 2;
         opacity: 1;
@@ -258,7 +262,7 @@ p.text span {
        background-size:cover;
     }
 
-
+ /* Aung Tun - the lines below arranges the items in the slide as well as affect the opacity of the image*/
   
   *:target ~ .item-1 {
       opacity: 0;
@@ -303,12 +307,14 @@ p.text span {
         opacity: 1;
     }
 
+     /* Aung Tun - This is the container for the button and positions the button*/
   .container1 {
     
     margin-top: 270px;
     
       
       }
+       /* Aung Tun - These are the properties of the button*/
       .btn-1 {
       width: 150px;
       height: 75px;
