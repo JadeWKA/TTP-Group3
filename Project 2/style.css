@@ -148,6 +148,7 @@ p.text span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transform: scale(1.5);
 }
 
 /* VINCE PAMOLARCO - Options Properties */
@@ -174,6 +175,7 @@ p.text span {
     position:relative;
     width:800px;
     margin:0 auto;
+    transform: scale(1.9);
 }
 
   .carousel-item{
