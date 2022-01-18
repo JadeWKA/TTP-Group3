@@ -133,9 +133,11 @@ body {
 
 .buy {
     cursor: pointer;
-    background-color: darkgreen;
+    background-color: #4CAF50;
     border: solid black;
+    font-size: medium;
 }
+
 
 p.text {
     margin: 5px 0;
