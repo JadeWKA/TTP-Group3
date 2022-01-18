@@ -120,6 +120,14 @@ body {
     font-size: medium;
 }
 
+/* VINCE PAMOLARCO - Close Properties */
+.close {
+    cursor: pointer;
+    background-color: darkred;
+    border: solid black;
+    font-size: medium;
+}
+
 /* VINCE PAMOLARCO - Text Properties */
 p.text {
     margin: 5px 0;
@@ -155,4 +163,163 @@ p.text span {
 
 }
   
+.carousel-wrapper{
+    display: none;
+    height:400px;
+    position:relative;
+    width:800px;
+    margin:0 auto;
+  }
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
   
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+      right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+
+    .item-1 {
+        z-index: 2;
+        opacity: 1;
+      background:url('./img/974-stadium-image-en-meta-seo_0.jpg');
+      background-size:cover;
+      }
+    .item-2{
+      background:url('./img/Ahmad_Bin_Ali_Stadium.jpg');
+       background-size:cover;
+    }
+    .item-3{
+      background:url('./img/Al_Bayt_Stadium.jpeg');
+       background-size:cover;
+    }
+  
+    .item-4{
+      background:url('./img/Al_Janoub_Stadium.jpg');
+       background-size:cover;
+    }
+  
+    .item-5{
+      background:url('./img/Al_Thumama_Stadium.png');
+       background-size:cover;
+    }
+  
+    .item-6{
+      background:url('./img/education_city_stadium.jpg');
+       background-size:cover;
+    }
+  
+    .item-7{
+      background:url('./img/Khalifa_International_Stadium.jpeg');
+       background-size:cover;
+    }
+  
+    .item-8{
+      background:url('./img/Lusail_Stadium.jpg');
+       background-size:cover;
+    }
+
+
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+  
+    #item-4:target ~ .item-4
+    {   
+        z-index: 4;
+        opacity: 1;
+    }
+
+    #item-5:target ~ .item-5
+    {   
+        z-index: 5;
+        opacity: 1;
+    }
+
+    #item-6:target ~ .item-6
+    {   
+        z-index: 6;
+        opacity: 1;
+    }
+
+    #item-7:target ~ .item-7
+    {   
+        z-index: 7;
+        opacity: 1;
+    }
+
+    #item-8:target ~ .item-8
+    {   
+        z-index: 8;
+        opacity: 1;
+    }
+
+  .container1 {
+    
+    margin-top: 270px;
+    
+      
+      }
+      .btn-1 {
+      width: 150px;
+      height: 75px;
+      border: none;
+      color: white;
+      background-color: rgb(255, 0, 68);
+      border-radius: 4px;
+      box-shadow: inset 0 0 0 0  #f9e506;
+      transition: ease-out 0.3s;
+      font-size: 24px;
+      outline: none;
+
+      }
+

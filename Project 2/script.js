@@ -68,5 +68,19 @@ container.addEventListener('click', e => {
   }
 });
 
+// VINCE PAMOLARCO - Function Close
+
+function close()  {
+  var page = document.getElementById("page");
+
+  if (page.style.display="flex"){
+    page.style.display="none"
+    
+
+  }
+}
+
+// VINCE PAMOLARCO - Function Get -- 
+
 // VINCE PAMOLARCO - Initial count and total set
 updateSelectedCount();
