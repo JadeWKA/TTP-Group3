@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* VINCE PAMOLARCO - This applies to all page */
+* {
+    box-sizing: border-box;
+}
+
+/* VINCE PAMOLARCO - Body Properties */
+body {
+    background-color: #242333;
+    background-image: url(./images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* VINCE PAMOLARCO - Container Properties */
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+/* VINCE PAMOLARCO - View Properties */
+.view {
+    display: flex;
+}
+
+/* VINCE PAMOLARCO - Seat Properties */
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* VINCE PAMOLARCO - Seat Properties */
+.seat.selected {
+    background-color: #6feaf6;
+}
+
+/* VINCE PAMOLARCO - Occupied Seat Properties */
+.seat.occupied {
+    background-color: #fff;
+}
+
+/* VINCE PAMOLARCO - Row Properties */
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+
+/* VINCE PAMOLARCO - Row Properties */
+.seat:nth-last-of-type(2) {
+    margin-left: 18px;
+}
+
+/* VINCE PAMOLARCO - Hover Properties */
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* VINCE PAMOLARCO - Hover Properties */
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+/* VINCE PAMOLARCO - Showcase Properties */
+.showcase {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* VINCE PAMOLARCO - Showcase Properties */
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+/* VINCE PAMOLARCO - Showcase Properties */
+.showcase li small {
+    margin-left: 2px;
+}
+
+/* VINCE PAMOLARCO - Row Properties */
+.row {
+    display: flex;
+}
+
+/* VINCE PAMOLARCO - Screen Properties */
+.screen {
+    background-color: green;
+    height: 90px;
+    width: 100%;
+    margin: 15px 0;
+    /* transform: rotateX(-45deg); */
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+
+}
+
+/* VINCE PAMOLARCO - Buy Properties */
+.buy {
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: solid black;
+    font-size: medium;
+}
+
+/* VINCE PAMOLARCO - Close Properties */
+.close {
+    cursor: pointer;
+    background-color: darkred;
+    border: solid black;
+    font-size: medium;
+}
+
+/* VINCE PAMOLARCO - Text Properties */
+p.text {
+    margin: 5px 0;
+}
+
+/* VINCE PAMOLARCO - Text Properties */
+p.text span {
+    color: #6feaf6;
+}
+
+/* VINCE PAMOLARCO - Page Properties */
+.page {
+    display: none;
+    background-color: #242333;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+/* VINCE PAMOLARCO - Options Properties */
+.options {
+    align-self: flex-start;
+    max-width: 50%;
+
+}
+
+/* VINCE PAMOLARCO - Summary Properties */
+.summary {
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+    text-align: center;
+
+}
+  
+/* Aung Tun- the lines below postion the images in the carousel*/
+
+.carousel-wrapper{
+    display: flex;
+    height:400px;
+    position:relative;
+    width:800px;
+    margin:0 auto;
+    transform: scale(1.9);
+
+}
+
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  /* Aung Tun- arrow properties */
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+      right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+
+    /* Aung Tun - The lines below contain the image files of in the carousel */
+    .item-1 {
+        z-index: 2;
+        opacity: 1;
+      background:url('./images/974-stadium-image-en-meta-seo_0.jpg');
+      background-size:cover;
+      }
+    .item-2{
+      background:url('./images/Ahmad_Bin_Ali_Stadium.jpg');
+       background-size:cover;
+    }
+    .item-3{
+      background:url('./images/Al_Bayt_Stadium.jpeg');
+       background-size:cover;
+    }
+  
+    .item-4{
+      background:url('./images/Al_Janoub_Stadium.jpg');
+       background-size:cover;
+    }
+  
+    .item-5{
+      background:url('./images/Al_Thumama_Stadium.png');
+       background-size:cover;
+    }
+  
+    .item-6{
+      background:url('./images/education_city_stadium.jpg');
+       background-size:cover;
+    }
+  
+    .item-7{
+      background:url('./images/Khalifa_International_Stadium.jpeg');
+       background-size:cover;
+    }
+  
+    .item-8{
+      background:url('./images/Lusail_Stadium.jpg');
+       background-size:cover;
+    }
+
+ /* Aung Tun - the lines below arranges the items in the slide as well as affect the opacity of the image*/
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+  
+    #item-4:target ~ .item-4
+    {   
+        z-index: 4;
+        opacity: 1;
+    }
+
+    #item-5:target ~ .item-5
+    {   
+        z-index: 5;
+        opacity: 1;
+    }
+
+    #item-6:target ~ .item-6
+    {   
+        z-index: 6;
+        opacity: 1;
+    }
+
+    #item-7:target ~ .item-7
+    {   
+        z-index: 7;
+        opacity: 1;
+    }
+
+    #item-8:target ~ .item-8
+    {   
+        z-index: 8;
+        opacity: 1;
+    }
+
+     /* Aung Tun - This is the container for the button and positions the button*/
+  .container1 {
+    
+    margin-top: 270px;
+    
+      
+      }
+       /* Aung Tun - These are the properties of the button*/
+      .btn-1 {
+      width: 150px;
+      height: 75px;
+      border: none;
+      color: white;
+      background-color: rgb(255, 0, 68);
+      border-radius: 4px;
+      box-shadow: inset 0 0 0 0  #f9e506;
+      transition: ease-out 0.3s;
+      font-size: 24px;
+      outline: none;
+      cursor: pointer;
+
+      }
