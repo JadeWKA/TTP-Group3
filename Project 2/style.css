@@ -147,8 +147,26 @@ p.text {
     color: #6feaf6;
 }
   
-  
-  
-  
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.options {
+    align-self: flex-start;
+    max-width: 50%;
+
+
+}
+
+.summary {
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+    text-align: center;
+
+}
   
   

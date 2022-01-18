@@ -12,187 +12,249 @@
 </head>
 <body>
 
-  <div class="movie-container" style="display: none;">
-    <label>Pick a movie:</label>
-
-    <select id="movie">
-      <option value="600">Regular ($600)</option>
-      <option value="700">Regular with Popcorn ($700)</option>
-      <option value="800">VIP: Popcorn + Soda ($800)</option>
-
-    </select>
-
-  </div>
-
-
-  <ul class="showcase">
-
-    <li>
-      <div class="seat"></div>
-      <small>N/A</small>
-    </li>
-
-    <li>
-      <div class="seat selected"></div>
-      <small>Selected</small>
-    </li>
-
-    <li>
-      <div class="seat occupied"></div>
-      <small>Occupied</small>
-    </li>
-
-  </ul>
-
-
-  <div class="container">
-
-    <div class="row">
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-  
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
-    <!-- Screen is Here -->
-    <div class="screen"></div>
-
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-  
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-  
-    <div class="row">
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    
-  </div>
-
-
-  <p class="text">
-      Your estimated price for <span id="count">0</span> seats is $<span id="total">0</span
-      >
-  </p>
-
-  <button class='buy' onclick=" window.open('https://www.qatarairways.com/app/fifa2022/?iid=ALL24232430')"> 
-    Get your tickets now
+  <button id="show">
+    SHOW ME THE GOODS
   </button>
+
+  <!-- VINCE PAMOLARCO - START of Section of whole page -->
+  <div class="page">
+
+    <!-- VINCE PAMOLARCO - Hidden Section for Pricing -->
+    <div class="movie-container" style="display: none;">
+      <label>Pick a movie:</label>
+
+      <select id="movie">
+        <option value="600">Regular ($600)</option>
+        <option value="700">Regular with Popcorn ($700)</option>
+        <option value="800">VIP: Popcorn + Soda ($800)</option>
+
+      </select>
+
+    </div>
+
+    <!-- VINCE PAMOLARCO - START of Section for options -->
+    <div class="options">
+      <ul class="showcase">
+
+        <li>
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+
+        <li>
+          <div class="seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+
+      </ul>
+
+    </div>
+    <!-- VINCE PAMOLARCO - END of Section for options -->
+
+    <!-- VINCE PAMOLARCO - START of Section for seating -->
+    <div class="seating">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      
+        <div class="row">
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+        </div>
+
+        <!-- Screen is Here -->
+        <div class="screen"></div>
+
+        <div class="row">
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat occupied "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied "></div>
+          <div class="seat occupied "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+        </div>
+        
+      </div>
+
+    </div>
+    <!-- VINCE PAMOLARCO - END of Section for seating -->
+
+    <!-- VINCE PAMOLARCO - START of Section for summary -->
+    <div class="summary">
+
+      <p class="text">
+          Your price for <span id="count">0</span> seats is $<span id="total">0</span
+          >
+      </p>
+
+      <button class='buy' onclick=" window.open('https://www.qatarairways.com/app/fifa2022/?iid=ALL24232430')"> 
+        Get your tickets now
+      </button>
+
+    </div>
+    <!-- VINCE PAMOLARCO - END of Section for summary -->
+
+
+  </div>
+  <!-- VINCE PAMOLARCO - END ofSection of whole page -->
 
   <script src="script.js"></script>
         
