@@ -326,6 +326,7 @@ p.text span {
       transition: ease-out 0.3s;
       font-size: 24px;
       outline: none;
+      cursor: pointer;
 
       }
 

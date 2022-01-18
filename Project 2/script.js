@@ -5,6 +5,37 @@ const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 
+// VINCE PAMOLARCO - Function Close
+
+function close()  {
+  var VINCE = document.getElementById("page");
+  var AUNG = document.getElementById("carousel-wrapper");
+
+  if (VINCE.style.display==="flex")
+  {
+    document.getElementById("page").style.display="none"
+    document.getElementById("carousel-wrapper").style.display="flex"
+  }
+  else
+  {
+    document.getElementById("page").style.display="flex"
+    document.getElementById("carousel-wrapper").style.display="none"
+  }
+
+}
+
+
+// VINCE PAMOLARCO - Function Get 
+
+function get()  {
+  const page = document.getElementById("page");
+  const carousel = document.getElementById("carousel-wrapper");
+
+    page.style.display="flex"
+    carousel.style.display="none"
+
+}
+
 populateUI();
 
 let ticketPrice = +movieSelect.value;
@@ -68,19 +99,6 @@ container.addEventListener('click', e => {
   }
 });
 
-// VINCE PAMOLARCO - Function Close
-
-function close()  {
-  var page = document.getElementById("page");
-
-  if (page.style.display="flex"){
-    page.style.display="none"
-    
-
-  }
-}
-
-// VINCE PAMOLARCO - Function Get -- 
 
 // VINCE PAMOLARCO - Initial count and total set
 updateSelectedCount();
