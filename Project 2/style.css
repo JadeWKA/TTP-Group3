@@ -144,18 +144,18 @@ p.text span {
 
 /* VINCE PAMOLARCO - Page Properties */
 .page {
+    display: none;
     background-color: #242333;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transform: scale(1.5);
+    position: absolute;
 }
 
 /* VINCE PAMOLARCO - Options Properties */
 .options {
     align-self: flex-start;
     max-width: 50%;
-
 
 }
 
@@ -171,11 +171,13 @@ p.text span {
 /* Aung Tun- the lines below postion the images in the carousel*/
 
 .carousel-wrapper{
+    display: flex;
     height:400px;
     position:relative;
     width:800px;
     margin:0 auto;
     transform: scale(1.9);
+
 }
 
   .carousel-item{
