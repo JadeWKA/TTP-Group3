@@ -1,3 +1,4 @@
+// VINCE PAMOLARCO - Script for picking seats
 const container = document.querySelector('.container');
 const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
@@ -8,13 +9,13 @@ populateUI();
 
 let ticketPrice = +movieSelect.value;
 
-// Save selected movie index and price
+// VINCE PAMOLARCO - Save selected movie index and price
 function setMovieData(movieIndex, moviePrice) {
   localStorage.setItem('selectedMovieIndex', movieIndex);
   localStorage.setItem('selectedMoviePrice', moviePrice);
 }
 
-// Update total and count
+// VINCE PAMOLARCO - Update total and count
 function updateSelectedCount() {
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
 
@@ -28,7 +29,7 @@ function updateSelectedCount() {
   total.innerText = selectedSeatsCount * ticketPrice;
 }
 
-// Get data from localstorage and populate UI
+// VINCE PAMOLARCO - Get data from localstorage and populate UI
 function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
 
@@ -47,14 +48,14 @@ const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
   }
 }
 
-  // Movie select event
+// VINCE PAMOLARCO - Movie select event
 movieSelect.addEventListener('change', e => {
   ticketPrice = +e.target.value;
   setMovieData(e.target.selectedIndex, e.target.value);
   updateSelectedCount();
 });
 
-// Seat click event
+// VINCE PAMOLARCO - Seat click event
 container.addEventListener('click', e => {
   if (
     e.target.classList.contains('seat') &&
@@ -66,5 +67,5 @@ container.addEventListener('click', e => {
   }
 });
 
-// Initial count and total set
+// VINCE PAMOLARCO - Initial count and total set
 updateSelectedCount();
