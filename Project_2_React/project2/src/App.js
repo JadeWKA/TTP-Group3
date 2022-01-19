@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './resources/style.css';
-import { Element, Link } from 'react-scroll';
+import Link from "./components/links"
 
 function App() {
   return (

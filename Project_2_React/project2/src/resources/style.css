@@ -23,6 +23,12 @@ body {
     margin: 0;
 }
 
+.airline {
+    height: auto;
+    width: 50vh;
+}
+
+
 /* VINCE PAMOLARCO - Container Properties */
 .container {
     perspective: 1000px;
@@ -34,87 +40,6 @@ body {
     display: flex;
 }
 
-/* VINCE PAMOLARCO - Seat Properties */
-.seat {
-    background-color: #444451;
-    height: 12px;
-    width: 15px;
-    margin: 3px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-/* VINCE PAMOLARCO - Seat Properties */
-.seat.selected {
-    background-color: #6feaf6;
-}
-
-/* VINCE PAMOLARCO - Occupied Seat Properties */
-.seat.occupied {
-    background-color: #fff;
-}
-
-/* VINCE PAMOLARCO - Row Properties */
-.seat:nth-of-type(2) {
-    margin-right: 18px;
-}
-
-/* VINCE PAMOLARCO - Row Properties */
-.seat:nth-last-of-type(2) {
-    margin-left: 18px;
-}
-
-/* VINCE PAMOLARCO - Hover Properties */
-.seat:not(.occupied):hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-/* VINCE PAMOLARCO - Hover Properties */
-.showcase .seat:not(.occupied):hover {
-    cursor: default;
-    transform: scale(1);
-}
-
-/* VINCE PAMOLARCO - Showcase Properties */
-.showcase {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #777;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* VINCE PAMOLARCO - Showcase Properties */
-.showcase li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-}
-
-/* VINCE PAMOLARCO - Showcase Properties */
-.showcase li small {
-    margin-left: 2px;
-}
-
-/* VINCE PAMOLARCO - Row Properties */
-.row {
-    display: flex;
-}
-
-/* VINCE PAMOLARCO - Screen Properties */
-.screen {
-    background-color: green;
-    height: 90px;
-    width: 100%;
-    margin: 15px 0;
-    /* transform: rotateX(-45deg); */
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
-
-}
 
 /* VINCE PAMOLARCO - Buy Properties */
 .buy {
@@ -132,15 +57,6 @@ body {
     font-size: medium;
 }
 
-/* VINCE PAMOLARCO - Text Properties */
-p.text {
-    margin: 5px 0;
-}
-
-/* VINCE PAMOLARCO - Text Properties */
-p.text span {
-    color: #6feaf6;
-}
 
 /* VINCE PAMOLARCO - Page Properties */
 .page {
@@ -149,8 +65,11 @@ p.text span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
+    border: solid darkred;
+    position: relative;
 }
+
+
 
 /* VINCE PAMOLARCO - Options Properties */
 .options {
@@ -167,17 +86,37 @@ p.text span {
     text-align: center;
 
 }
-  
+
+.page2 {
+    display: flex;
+    background-color: #242333;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid darkred;
+    position: relative;
+}
 /* Aung Tun- the lines below postion the images in the carousel*/
 
 .carousel-wrapper{
     display: flex;
     height:400px;
-    position:relative;
     width:800px;
     margin:0 auto;
-    transform: scale(1.9);
+    padding: 0;
+    position: relative;
+    transform: scale(1.5);
 
+}
+
+.carousel-wrapper2{
+    display: none;
+    height:400px;
+    width:800px;
+    margin:0 auto;
+    padding: 0;
+    position: relative;
+    transform: scale(1.5);
 }
 
   .carousel-item{
